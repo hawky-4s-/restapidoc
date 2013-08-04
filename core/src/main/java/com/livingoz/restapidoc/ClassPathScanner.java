@@ -4,20 +4,18 @@ import org.reflections.Reflections;
 import org.reflections.util.ClasspathHelper;
 import org.reflections.util.ConfigurationBuilder;
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import java.lang.annotation.Annotation;
 import java.util.Set;
 
 public class ClassPathScanner {
 
-  public Set<Class<?>> scanPackageFor(String packageName) {
+  public Set<Class<?>> scanPackageForClassesWithAnnotation(String packageName, Class<? extends Annotation> annotation) {
     Reflections reflections = new ConfigurationBuilder()
         .addUrls(ClasspathHelper.forPackage(packageName)).build();
 
-    Set<Class<? extends Application>> application = reflections.getSubTypesOf(Application.class);
-    Set<Class<?>> applicationPath = reflections.getTypesAnnotatedWith(ApplicationPath.class);
+    Set<Class<?>> annotatedClasses = reflections.getTypesAnnotatedWith(annotation);
 
-    return applicationPath;
+    return annotatedClasses;
   }
 
 }
