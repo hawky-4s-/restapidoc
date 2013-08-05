@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63f9f785-83e2-43e5-958f-fa33c8c68f60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/com/livingoz/restapidoc/ClassPathScannerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/restapidoc/test/SubResource.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassPathScanner.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassPathScanner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/java/com/livingoz/restapidoc/ClassPathScannerTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/livingoz/restapidoc/ClassPathScannerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/pom.xml" afterPath="$PROJECT_DIR$/core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="restapidoc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/pom.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375650651661" ignored="false" />
+    <file path="/pom.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375710390982" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/pom.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375356484141" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/pom.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375356485665" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/webapps/camunda-webapp/core/pom.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375356485665" ignored="false" />
@@ -30,35 +35,55 @@
     <file path="$MAVEN_REPOSITORY$/org/camunda/bpm/example/camunda-example-invoice/7.0.0-SNAPSHOT/camunda-example-invoice-7.0.0-SNAPSHOT.war!/WEB-INF/classes/META-INF/processes.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375367456560" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/camunda/bpm/example/camunda-example-invoice/7.0.0-SNAPSHOT/camunda-example-invoice-7.0.0-SNAPSHOT.war!/WEB-INF/web.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375366741389" ignored="false" />
     <file path="/README.md" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375368688104" ignored="false" />
-    <file path="/Dummy.txt" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375650045700" ignored="false" />
+    <file path="/Dummy.txt" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375707081093" ignored="false" />
     <file path="$PROJECT_DIR$/../../oss/build-pipeline-plugin/src/test/java/au/com/centrumsystems/hudson/plugin/buildpipeline/BuildFormTest.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375439354984" ignored="false" />
     <file path="/BuildFormTest.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375419209694" ignored="false" />
     <file path="$PROJECT_DIR$/../../oss/build-pipeline-plugin/pom.xml" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375429756325" ignored="false" />
     <file path="$PROJECT_DIR$/../../oss/build-pipeline-plugin/src/main/java/au/com/centrumsystems/hudson/plugin/buildpipeline/DownstreamProjectGridBuilder.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375439353490" ignored="false" />
-    <file path="/a.dummy" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375650200750" ignored="false" />
+    <file path="/a.dummy" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375707341205" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/distro/tomcat/assembly/src/README.txt" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375433399415" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/distro/tomcat/assembly/src/start-camunda.bat" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375433399415" ignored="false" />
     <file path="/start-camunda.bat" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375433174070" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/distro/tomcat/assembly/src/start-camunda.sh" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375433399099" ignored="false" />
     <file path="/start-camunda.sh" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375433269896" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444060771" ignored="false" />
-    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.db2.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444080339" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.db2.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.db2.create.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444099248" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444107623" ignored="false" />
-    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.mssql.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444201941" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.mssql.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.mssql.create.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444212606" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.mysql.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444222367" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.mysql.create.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444232467" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.oracle.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444266116" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.oracle.create.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444282359" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.postgres.create.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444293370" ignored="false" />
-    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.postgres.create.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444308103" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/create/activiti.postgres.create.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/drop/activiti.h2.drop.engine.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444388618" ignored="false" />
     <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/drop/activiti.h2.drop.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375444393144" ignored="false" />
     <file path="/JaxRsScanner.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375648584079" ignored="false" />
-    <file path="/ClassPathScanner.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375649628888" ignored="false" />
-    <file path="/ClassPathScannerTest.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375650500183" ignored="false" />
+    <file path="/ClassPathScanner.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375692370460" ignored="false" />
+    <file path="/ClassPathScannerTest.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375692651091" ignored="false" />
     <file path="/camunda-engine-rest-7.0.0-alpha8.pom" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375650823528" ignored="false" />
+    <file path="/ClassScanner.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375692162844" ignored="false" />
+    <file path="/TestApplication.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375692544861" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine/src/main/resources/org/camunda/bpm/engine/db/drop/activiti.db2.drop.history.sql" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375693082524" ignored="false" />
+    <file path="/TestResource.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375702036810" ignored="false" />
+    <file path="/SubResource.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375702143533" ignored="false" />
+    <file path="/Edge.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375702313090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/UserRestService.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/impl/AuthorizationRestServiceImpl.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/GroupRestService.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/impl/GroupRestServiceImpl.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/impl/UserRestServiceImpl.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/authorization/impl/AuthorizationResourceImpl.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/dto/authorization/AuthorizationDto.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/identity/impl/GroupResourceImpl.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/AuthorizationRestService.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/engine-rest/src/main/java/org/camunda/bpm/engine/rest/dto/identity/GroupDto.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375703555090" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/distro/jbossas71/subsystem/src/main/java/org/camunda/bpm/container/impl/jboss/extension/handler/ProcessEngineAdd.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375715133486" ignored="false" />
+    <file path="/ProcessEngineAdd.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375709950540" ignored="false" />
+    <file path="$PROJECT_DIR$/../../camunda/camunda-bpm-platform/distro/jbossas71/subsystem/src/main/java/org/camunda/bpm/container/impl/jboss/extension/ModelConstants.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375715132508" ignored="false" />
+    <file path="/ModelConstants.java" changelist="63f9f785-83e2-43e5-958f-fa33c8c68f60" time="1375715125753" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +98,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -109,7 +135,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -119,82 +144,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="ClassPathScanner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassPathScanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="45" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/java/restapidoc/test/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="17" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/java/restapidoc/test/Resource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="16" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/java/restapidoc/test/SubResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Edge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="75" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="28" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
+            <state line="38" column="32" selection-start="1329" selection-end="1379" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="camunda-engine-rest-7.0.0-alpha8.pom" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8.pom">
+      <file leaf-file-name="jackson-module-jsonSchema-2.2.2.pom" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jsonSchema/2.2.2/jackson-module-jsonSchema-2.2.2.pom">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExecutionRestService.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/ExecutionRestService.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="250" selection-end="250" vertical-scroll-proportion="-5.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JacksonConfigurator.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/mapper/JacksonConfigurator.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="247" selection-end="247" vertical-scroll-proportion="-0.48">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractRestProcessEngineAware.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/AbstractRestProcessEngineAware.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="46" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExecutionRestServiceImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/ExecutionRestServiceImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="576" selection-end="576" vertical-scroll-proportion="30.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdentityRestServiceImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/IdentityRestServiceImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="40" selection-start="361" selection-end="361" vertical-scroll-proportion="15.36">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessInstanceRestServiceImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/ProcessInstanceRestServiceImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="175" selection-end="175" vertical-scroll-proportion="30.6">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupRestService.class" pinned="false" current="true" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/GroupRestService.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="3" selection-start="500" selection-end="500" vertical-scroll-proportion="0.15075377">
+            <state line="26" column="40" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.5900151">
               <folding />
             </state>
           </provider>
@@ -203,7 +228,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="21" selection-start="1184" selection-end="1223" vertical-scroll-proportion="0.0">
+            <state line="17" column="32" selection-start="594" selection-end="600" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -217,6 +242,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -227,15 +253,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core/src/main/java/JaxRsScanner.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/JaxRsScanner.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassPathScanner.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/ClassPathScannerTest.java" />
-        <option value="$PROJECT_DIR$/core/pom.xml" />
-        <option value="$PROJECT_DIR$/core/src/test/java/com/livingoz/restapidoc/ClassPathScannerTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8.pom" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassScanner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassPathScanner.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/com/livingoz/restapidoc/ClassPathScannerTest.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/restapidoc/test/TestResource.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/restapidoc/test/TestApplication.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/restapidoc/test/Application.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/restapidoc/test/SubResource.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/Graph.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/Node.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/Edge.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
       </list>
     </option>
   </component>
@@ -298,10 +331,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="2" />
-    <option name="width" value="1602" />
-    <option name="height" value="902" />
+    <option name="x" value="1599" />
+    <option name="width" value="1922" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -331,6 +363,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -341,6 +374,116 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.reflections:reflections:0.9.9-RC1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reflections-0.9.9-RC1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reflections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.reflections:reflections:0.9.9-RC1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reflections-0.9.9-RC1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reflections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.reflections:reflections:0.9.9-RC1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reflections-0.9.9-RC1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.javassist:javassist:3.16.1-GA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javassist-3.16.1-GA.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.javassist:javassist:3.16.1-GA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javassist-3.16.1-GA.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javassist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -392,6 +535,40 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -445,14 +622,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restapidoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/core/src/test/java" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -655,38 +865,38 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="2" width="1602" height="902" extended-state="6" />
-    <editor active="false" />
+    <frame x="1599" y="0" width="1922" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288948" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6709539" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22393823" sideWeight="0.6711052" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2636656" sideWeight="0.4028314" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.6724368" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2059202" sideWeight="0.6711052" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2059202" sideWeight="0.6724368" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6709539" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Colour Chooser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18569905" sideWeight="0.7363344" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5971686" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.6709539" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.6724368" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -757,118 +967,115 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/JaxRsScanner.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/reflections/reflections/0.9.9-RC1/reflections-0.9.9-RC1-sources.jar!/org/reflections/adapters/JavaReflectionAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/reflections/reflections/0.9.9-RC1/reflections-0.9.9-RC1-sources.jar!/org/reflections/util/ConfigurationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="23" selection-start="6159" selection-end="6159" vertical-scroll-proportion="0.33261803">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_1.1_spec/1.0.1.Final/jboss-jaxrs-api_1.1_spec-1.0.1.Final-sources.jar!/javax/ws/rs/core/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="866" selection-end="866" vertical-scroll-proportion="0.33194155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassPathScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="2" selection-start="4831" selection-end="4831" vertical-scroll-proportion="0.35238096">
-          <folding />
-        </state>
+        <state line="55" column="24" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.7570755" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/test/java/com/livingoz/restapidoc/ClassPathScannerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="13" column="40" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/reflections/reflections/0.9.9-RC1/reflections-0.9.9-RC1-sources.jar!/org/reflections/scanners/AbstractScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="36" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/reflections/reflections/0.9.9-RC1/reflections-0.9.9-RC1-sources.jar!/org/reflections/scanners/FieldAnnotationsScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="72" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/ClassPathScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/restapidoc/test/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/restapidoc/test/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/restapidoc/test/SubResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/livingoz/restapidoc/structure/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="75" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/reflections/reflections/0.9.9-RC1/reflections-0.9.9-RC1.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="21" selection-start="1184" selection-end="1223" vertical-scroll-proportion="0.0">
+        <state line="17" column="32" selection-start="594" selection-end="600" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="28" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
+        <state line="38" column="32" selection-start="1329" selection-end="1379" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8.pom">
+    <entry file="file://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jsonSchema/2.2.2/jackson-module-jsonSchema-2.2.2.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/ExecutionRestService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="250" selection-end="250" vertical-scroll-proportion="-5.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/mapper/JacksonConfigurator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="247" selection-end="247" vertical-scroll-proportion="-0.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/AbstractRestProcessEngineAware.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="46" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/ExecutionRestServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="576" selection-end="576" vertical-scroll-proportion="30.96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/IdentityRestServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="361" selection-end="361" vertical-scroll-proportion="15.36">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/impl/ProcessInstanceRestServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="175" selection-end="175" vertical-scroll-proportion="30.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/camunda/bpm/camunda-engine-rest/7.0.0-alpha8/camunda-engine-rest-7.0.0-alpha8-classes.jar!/org/camunda/bpm/engine/rest/GroupRestService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="500" selection-end="500" vertical-scroll-proportion="0.15075377">
+        <state line="26" column="40" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.5900151">
           <folding />
         </state>
       </provider>

@@ -1,14 +1,9 @@
 package com.livingoz.restapidoc;
 
 import org.junit.Test;
-import org.reflections.ReflectionUtils;
-import org.reflections.Reflections;
-import org.reflections.scanners.TypeElementsScanner;
-import org.reflections.util.ClasspathHelper;
-import org.reflections.util.ConfigurationBuilder;
 
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.Path;
-import java.lang.annotation.Annotation;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -16,25 +11,32 @@ import static org.junit.Assert.assertEquals;
 public class ClassPathScannerTest {
 
   public static final String PACKAGE_ORG_CAMUNDA_BPM_ENGINE_REST = "org.camunda.bpm.engine.rest";
+  public static final String PACKAGE_RESTAPIDOC_TEST = "restapidoc.test";
 
   @Test
-  public void shouldFindApplicationPathAnnotatedClassInPackage() {
-    ClassPathScanner scanner = new ClassPathScanner();
-    Set<Class<?>> classes = scanner.scanPackageForClassesWithAnnotation(PACKAGE_ORG_CAMUNDA_BPM_ENGINE_REST, Path.class);
+  public void shouldFindPathAnnotatedClassesInPackage() {
+    ClassPathScanner scanner = new ClassPathScanner(PACKAGE_ORG_CAMUNDA_BPM_ENGINE_REST);
+    Set<Class<?>> classes = scanner.getClassesWithAnnotation(Path.class);
 
     assertEquals(11, classes.size());
 
-    for (Class<?> klass : classes) {
-      Path annotation = klass.getAnnotation(Path.class);
-      System.out.println(klass + " path: " + annotation.value());
+    for (Class<?> clazz : classes) {
+      Path annotation = clazz.getAnnotation(Path.class);
+      System.out.println(clazz + " path: " + annotation.value());
     }
   }
 
   @Test
-  public void test() {
-    Reflections reflections = new ConfigurationBuilder()
-        .addUrls(ClasspathHelper.forPackage(PACKAGE_ORG_CAMUNDA_BPM_ENGINE_REST))
-        .addScanners(new TypeElementsScanner()).build();
+  public void shouldFindApplicationPathAnnotatedClassInPackage() {
+    ClassPathScanner scanner = new ClassPathScanner(PACKAGE_RESTAPIDOC_TEST);
+    Set<Class<?>> classes = scanner.getClassesWithAnnotation(ApplicationPath.class);
+
+    assertEquals(1, classes.size());
+
+    for (Class<?> clazz : classes) {
+      ApplicationPath annotation = clazz.getAnnotation(ApplicationPath.class);
+      System.out.println(clazz + " path: " + annotation.value());
+    }
   }
 
 }
