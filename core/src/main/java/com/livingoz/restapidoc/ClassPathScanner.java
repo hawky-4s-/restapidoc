@@ -13,16 +13,17 @@ import java.util.Set;
 
 public class ClassPathScanner {
 
+  private AbstractScanner[] scanners = {
+      new TypeAnnotationsScanner(),
+      new MethodAnnotationsScanner(),
+      new MethodParameterScanner(),
+      new FieldAnnotationsScanner(),
+      new SubTypesScanner()
+  };
+
   private Reflections reflections;
 
   public ClassPathScanner(String packageName) {
-    AbstractScanner[] scanners = { new TypeAnnotationsScanner(),
-                                   new MethodAnnotationsScanner(),
-                                   new MethodParameterScanner(),
-                                   new FieldAnnotationsScanner(),
-                                   new SubTypesScanner()
-    };
-
     reflections = new ConfigurationBuilder()
         .addUrls(ClasspathHelper.forPackage(packageName))
         .addScanners(scanners)
@@ -35,7 +36,7 @@ public class ClassPathScanner {
   }
 
   public Set<Method> getAnnotatedClassMethods(Class clazz, Class<? extends Annotation> annotation) {
-    Set<Method> annotatedMethods = reflections.getMethodsAnnotatedWith(annotation);
+    Set<Method> annotatedMethods = reflections.getStore().getMethodsAnnotatedWith(annotation);
     return annotatedMethods;
   }
 
