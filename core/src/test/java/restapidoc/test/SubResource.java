@@ -6,8 +6,8 @@ import javax.ws.rs.Path;
 public class SubResource extends Resource {
 
   @Path("myStuff")
-  public void myStuff() {
-
+  public String myStuff() {
+    return null;
   }
 
 }

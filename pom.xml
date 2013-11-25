@@ -7,49 +7,62 @@
   <groupId>com.livingoz.restapidoc</groupId>
   <artifactId>restapidoc</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
   <modules>
     <module>core</module>
   </modules>
-  <packaging>pom</packaging>
 
   <properties>
-    <version.jackson>2.2.2</version.jackson>
+    <version.jackson>2.2.3</version.jackson>
     <version.jboss.jaxrs>1.0.1.Final</version.jboss.jaxrs>
     <version.google.reflections>0.9.9-RC1</version.google.reflections>
-
+    <version.jersey>2.4.1</version.jersey>
 
     <version.junit>4.11</version.junit>
-    <version.camunda-bpm>7.0.0-alpha8</version.camunda-bpm>
+    <version.camunda-bpm>7.0.0-Final</version.camunda-bpm>
   </properties>
 
   <dependencyManagement>
     <dependencies>
-      <!--dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>${version.jackson}</version>
-      </dependency-->
-      <dependency>
-        <groupId>com.fasterxml.jackson.module</groupId>
-        <artifactId>jackson-module-afterburner</artifactId>
-        <version>${version.jackson}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.module</groupId>
-        <artifactId>jackson-module-jsonSchema</artifactId>
-        <version>${version.jackson}</version>
-      </dependency>
+      <!--<dependency>-->
+        <!--<groupId>com.fasterxml.jackson.core</groupId>-->
+        <!--<artifactId>jackson-databind</artifactId>-->
+        <!--<version>${version.jackson}</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>com.fasterxml.jackson.module</groupId>-->
+        <!--<artifactId>jackson-module-afterburner</artifactId>-->
+        <!--<version>${version.jackson}</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>com.fasterxml.jackson.module</groupId>-->
+        <!--<artifactId>jackson-module-jsonSchema</artifactId>-->
+        <!--<version>${version.jackson}</version>-->
+      <!--</dependency>-->
       <dependency>
         <groupId>org.reflections</groupId>
         <artifactId>reflections</artifactId>
         <version>${version.google.reflections}</version>
       </dependency>
 
+      <!--<dependency>-->
+        <!--<groupId>org.jboss.spec.javax.ws.rs</groupId>-->
+        <!--<artifactId>jboss-jaxrs-api_1.1_spec</artifactId>-->
+        <!--<version>${version.jboss.jaxrs}</version>-->
+      <!--</dependency>-->
+
       <dependency>
-        <groupId>org.jboss.spec.javax.ws.rs</groupId>
-        <artifactId>jboss-jaxrs-api_1.1_spec</artifactId>
-        <version>${version.jboss.jaxrs}</version>
+        <groupId>org.glassfish.jersey.core</groupId>
+        <artifactId>jersey-server</artifactId>
+        <version>${version.jersey}</version>
       </dependency>
+      <dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-simple-http</artifactId>
+        <version>${version.jersey}</version>
+      </dependency>
+
 
       <dependency>
         <groupId>junit</groupId>
@@ -61,7 +74,14 @@
         <groupId>org.camunda.bpm</groupId>
         <artifactId>camunda-engine-rest</artifactId>
         <version>${version.camunda-bpm}</version>
-        <classifier>classes</classifier>
+        <scope>test</scope>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>org.camunda.bpm</groupId>
+        <artifactId>camunda-engine</artifactId>
+        <version>${version.camunda-bpm}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

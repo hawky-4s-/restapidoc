@@ -6,7 +6,7 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.Path;
 import java.util.Set;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class ClassPathScannerTest {
 
@@ -18,7 +18,7 @@ public class ClassPathScannerTest {
     ClassPathScanner scanner = new ClassPathScanner(PACKAGE_ORG_CAMUNDA_BPM_ENGINE_REST);
     Set<Class<?>> classes = scanner.getClassesWithAnnotation(Path.class);
 
-    assertEquals(11, classes.size());
+    assertEquals(16, classes.size());
 
     for (Class<?> clazz : classes) {
       Path annotation = clazz.getAnnotation(Path.class);
@@ -37,6 +37,13 @@ public class ClassPathScannerTest {
       ApplicationPath annotation = clazz.getAnnotation(ApplicationPath.class);
       System.out.println(clazz + " path: " + annotation.value());
     }
+  }
+
+  @Test
+  public void getCamundaRestJaxRsApplicationSubclass() {
+    ClassPathScanner scanner = new ClassPathScanner("org.camunda");
+    Class<? extends javax.ws.rs.core.Application> jaxRsApplicationSubclass = scanner.getJaxRsApplicationSubclass();
+    assertNotNull(jaxRsApplicationSubclass);
   }
 
 }
