@@ -1,7 +1,7 @@
 package com.livingoz.jersey;
 
 import com.livingoz.restapidoc.ClassPathScanner;
-import com.livingoz.restapidoc.Resources;
+import com.livingoz.restapidoc.scan.Resources;
 import org.glassfish.hk2.api.ServiceLocator;
 import org.glassfish.jersey.server.ApplicationHandler;
 import org.glassfish.jersey.server.internal.JerseyResourceContext;

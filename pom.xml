@@ -20,7 +20,7 @@
     <version.jersey>2.4.1</version.jersey>
 
     <version.junit>4.11</version.junit>
-    <version.camunda-bpm>7.0.0-Final</version.camunda-bpm>
+    <version.camunda-bpm>7.1.0-Final</version.camunda-bpm>
   </properties>
 
   <dependencyManagement>
