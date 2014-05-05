@@ -1,4 +1,4 @@
-package com.livingoz.restapidoc;
+package com.livingoz.restapidoc.scan;
 
 import org.junit.Test;
 

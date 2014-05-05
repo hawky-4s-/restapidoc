@@ -1,4 +1,4 @@
-package com.livingoz.restapidoc;
+package com.livingoz.restapidoc.scan;
 
 import org.glassfish.jersey.server.ApplicationHandler;
 import org.glassfish.jersey.server.ResourceConfig;
